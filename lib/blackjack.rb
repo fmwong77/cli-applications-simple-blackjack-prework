@@ -55,6 +55,7 @@ end
 #####################################################
 
 def runner
+<<<<<<< HEAD
   welcome #introduce the game
   # sleep 0.75
   card_total = initial_round #determine your current total & tell user what number they currently have
@@ -63,5 +64,17 @@ def runner
     display_card_total(card_total)
   end
   end_game(card_total) #prints out once user has lost
+=======
+  welcome()
+  initial_round()
+  prompt_user()
+  input = user_input()
+  if input == "s"
+    user_input()
+  elsif input == "h"
+    deal_card()
+  end
+  end
+>>>>>>> 342049b6e4b3a735dca55033bab18ff2139fdadb
 end
     
